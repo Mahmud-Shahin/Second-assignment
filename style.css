@@ -135,7 +135,12 @@ products-container
     color: gray;
 }
 
-/* footer section*/
+
+
+
+/*------------------
+ footer section
+ -------------------*/
 .footer{
     width: 100%;
     height: 200px;
@@ -154,6 +159,7 @@ footer h2{
    
     
 }
+
 .footer-details p{
     margin-top: -10px;
 }
@@ -163,4 +169,47 @@ footer h2{
     
     
    
+}
+
+@media only screen and (max-width:688px) {
+    .header-section{
+        display: none;
+    }
+
+    .section-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 50%;
+        margin-bottom: 20px;
+    }
+      
+   
+        .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+
+
+    
+}
+
+@media only screen and (min-width:688px)and (max-width:992px) {
+    .header-section{
+        display: none;
+    }
+
+    .section-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 30%;
+        margin-bottom: 20px;
+       
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
 }
